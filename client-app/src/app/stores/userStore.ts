@@ -51,6 +51,8 @@ export default class UserStore {
             history.push('/activities');
             store.modalStore.closeModal();
         } catch (error) {
+            console.log('catch errors..........');
+            console.log(error);
             throw error;
         }
     }
